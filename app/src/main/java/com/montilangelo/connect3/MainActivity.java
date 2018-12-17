@@ -51,14 +51,12 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         }else{
-            Log.e("ERROR","HEREEE1");
             boolean gameIsOver = true;
             for(int counterState: gameState){
                 if(counterState == 2){
                     gameIsOver = false;
                 }
             }
-            Log.e("ERROR","HEREEE2");
             if(gameIsOver){
                 TextView message = (TextView) findViewById(R.id.message_tv);
                 String drawMsg = " It's a Draw!";
@@ -66,7 +64,6 @@ public class MainActivity extends AppCompatActivity {
                 ConstraintLayout constraintLayout = (ConstraintLayout)findViewById(R.id.dialog);
                 constraintLayout.setVisibility(View.VISIBLE);
                 constraintLayout.bringToFront();
-                Log.e("ERROR","HEREEE3");
             }
         }
     }
